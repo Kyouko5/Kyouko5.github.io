@@ -2,15 +2,15 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]
+    branches: [master]  # 保持 master 分支不变
 
 permissions:
-  contents: write # 添加这个权限配置
+  contents: write
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
+    
     steps:
       - name: Checkout
         uses: actions/checkout@v3
@@ -19,15 +19,20 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'  # 添加缓存以加快安装
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci  # 使用 ci 而不是 install 以确保一致性
 
       - name: Build
         run: npm run build
+        env:
+          CI: false  # 防止将警告视为错误
 
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
           branch: gh-pages
           folder: out
+          clean: true  # 清理旧文件
+          token: ${{ secrets.GITHUB_TOKEN }}  # 明确指定 token
