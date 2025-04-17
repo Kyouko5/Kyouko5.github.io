@@ -4,7 +4,7 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.NODE_ENV === 'production' ? '/kyouko5.github.io' : '',
+  basePath: '/Kyouko5.github.io', // 替换为你的 GitHub 仓库名
   trailingSlash: true,
 }
 
