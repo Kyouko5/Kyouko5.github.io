@@ -5,10 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
-    "lint": "next lint",
+    "start": "npx serve@latest out",
     "init-tailwind": "tailwindcss init -p",
-    "export": "next export",
+    "export": "next build",
     "deploy": "next build && touch out/.nojekyll"
   },
   "keywords": ["portfolio", "nextjs", "react"],
