@@ -1,10 +1,3 @@
-/*
- * @Author: Kyouko
- * @Date: 2025-04-17 21:59:12
- * @LastEditTime: 2025-04-17 22:27:10
- * @Description: 请输入文件描述
- * @FilePath: /page/src/components/About.tsx
- */
 import React, { useEffect, useRef } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import Image from "next/image";
@@ -50,13 +43,12 @@ const About = () => {
         >
           <p className="text-tertiary mb-4">
             Hello! I'm Kyouko, a college student from China with a passion for technology and web development.
-            My journey into coding began during my first year of university when I first met coding and
-            discovered the creative potential of building websites and applications.
+            My journey into coding began during my first year of university when I first met a really nice web and
+            discovered the interest for building websites and applications.
           </p>
           <p className="text-tertiary mb-4">
             Currently, I'm pursuing my degree in Computer Science, where I've been able to explore various
-            programming languages and frameworks. Outside of classes, I enjoy learning new technologies and exploring
-            new things.
+            programming languages and frameworks. And now I am busy preparing for my master's graduate entrance exams.
           </p>
           <p className="text-tertiary mb-8">
             Here are a few technologies I've been working with recently:

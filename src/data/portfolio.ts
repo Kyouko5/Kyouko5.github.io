@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Kyouko",
   title: "College Student",
-  email: "kyouko@example.com",
+  email: "b22042127@njupt.edu.cn",
   description: "I'm a college student from China with a passion for web development and creating digital experiences. Currently exploring new technologies and learning to build modern web applications.",
   url: "https://kyouko-portfolio.com",
   social: {
@@ -28,7 +28,6 @@ export const skills = [
   "Next.js",
   "Python",
   "Tailwind CSS",
-  "UI/UX Design",
   "Problem Solving",
 ];
 
@@ -56,38 +55,22 @@ export const jobs = [
   },
   {
     company: "To be added",
-    title: "",
-    date: "",
+    title: "Heavy studies.",
+    date: "all the time",
     description: [
-      
+      "Suffering from dealing with exams!",
     ],
   },
 ];
 
 export const projects = [
   {
-    title: "Campus Events Platform",
-    description: "A web application for university students to discover and register for campus events. Features include event search, filtering, user registration, and admin dashboard.",
-    tags: ["React", "Next.js", "Tailwind CSS", "Firebase"],
-    image: "/images/project1.jpg",
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
-    title: "Study Group Finder",
-    description: "A platform that helps students find study groups based on courses, schedules, and learning preferences. Includes real-time chat and resource sharing features.",
-    tags: ["React", "Firebase", "Material UI", "Google Maps API"],
-    image: "/images/project2.jpg",
-    github: "https://github.com",
-    demo: "https://example.com",
-  },
-  {
     title: "Personal Blog",
     description: "A responsive blog website where I share my journey as a student developer, learning resources, and project insights. Built with modern web technologies for optimal performance.",
-    tags: ["Next.js", "Markdown", "Tailwind CSS", "Vercel"],
+    tags: ["Next.js", "Markdown", "Tailwind CSS", "Github Pages"],
     image: "/images/project3.jpg",
-    github: "https://github.com",
-    demo: "https://example.com",
+    github: "https://github.com/Kyouko5/Kyouko5.github.io",
+    demo: "https://kyouko5.github.io/",
   },
   {
     title: "Daliy Coffee Dashboard",
@@ -97,4 +80,20 @@ export const projects = [
     github: "https://github.com",
     demo: "https://example.com",
   },
+  // {
+  //   title: "Campus Events Platform",
+  //   description: "A web application for university students to discover and register for campus events. Features include event search, filtering, user registration, and admin dashboard.",
+  //   tags: ["React", "Next.js", "Tailwind CSS", "Firebase"],
+  //   image: "/images/project1.jpg",
+  //   github: "https://github.com",
+  //   demo: "https://example.com",
+  // },
+  // {
+  //   title: "Study Group Finder",
+  //   description: "A platform that helps students find study groups based on courses, schedules, and learning preferences. Includes real-time chat and resource sharing features.",
+  //   tags: ["React", "Firebase", "Material UI", "Google Maps API"],
+  //   image: "/images/project2.jpg",
+  //   github: "https://github.com",
+  //   demo: "https://example.com",
+  // },
 ]; 

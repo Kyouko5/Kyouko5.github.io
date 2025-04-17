@@ -34,7 +34,7 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.3, delay: 0.3 }}
         >
-          I create digital experiences while studying in College.
+          I create digital experiences while learning coding.
         </motion.h2>
         
         <motion.p
