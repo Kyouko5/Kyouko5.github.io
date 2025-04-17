@@ -2,12 +2,11 @@
 const nextConfig = {
   reactStrictMode: true,
   images: {
-    domains: [], // Add any domains for external images here
+    domains: [], // 如果有外部图片域名，添加在这里
   },
-}
-
-module.exports = {
   output: 'export', // 启用静态导出
-  basePath: '/kyouko5.github.io/repo', // 可选，替换为 GitHub Pages 子路径（如 username.github.io/repo）
+  basePath: '/kyouko-portfolio', // 替换为你的 GitHub 仓库名
   trailingSlash: true // 确保 URL 以 / 结尾，兼容 GitHub Pages
 }
+
+module.exports = nextConfig;
