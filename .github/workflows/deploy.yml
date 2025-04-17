@@ -2,10 +2,12 @@ name: Deploy to GitHub Pages
 
 on:
   push:
-    branches: [master]  # 保持 master 分支不变
+    branches: [master]  # 确保这与你的主分支名称一致
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   build-and-deploy:
@@ -29,10 +31,12 @@ jobs:
         env:
           CI: false  # 防止将警告视为错误
 
+      - name: Add .nojekyll file
+        run: touch out/.nojekyll
+
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@v4
         with:
-          branch: gh-pages
-          folder: out
-          clean: true  # 清理旧文件
-          token: ${{ secrets.GITHUB_TOKEN }}  # 明确指定 token
+          branch: gh-pages  # 部署到 gh-pages 分支
+          folder: out       # 从 out 文件夹部署
+          clean: true       # 清理旧文件
