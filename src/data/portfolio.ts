@@ -77,9 +77,17 @@ export const projects = [
     description: "An application that provides daily coffee recommendations and information about nearby cafés. Users can explore different coffee types, read reviews, and find the best places to enjoy their favorite brews.",
     tags: ["WeChat Mini Program", "JavaScript", "WXML", "WXSS"],
     image: "/images/project4.jpg",
-    github: "https://github.com",
+    github: "",
     demo: "https://example.com",
   },
+  {
+    title: "Students Management System",
+    description: "A web application for managing students in a school. Features include Student enrollment and management, Course management, and Admin dashboard.",
+    tags: ["ASP.NET Core 9.0", "EF Core", "SQL Server"],
+    image: "/images/project1.jpg",
+    github: "https://github.com/Kyouko5/Contoso-University",
+    demo: "https://example.com",
+    },
   // {
   //   title: "Campus Events Platform",
   //   description: "A web application for university students to discover and register for campus events. Features include event search, filtering, user registration, and admin dashboard.",

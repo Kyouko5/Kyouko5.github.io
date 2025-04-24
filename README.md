@@ -53,7 +53,3 @@ npm run build
 - Update your personal information in each component
 - Add your own images to the `/public/images` directory
 - Modify the color theme in `tailwind.config.js`
-
-## License
-
-MIT 
